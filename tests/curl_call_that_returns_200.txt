@@ -1,0 +1,28 @@
+curl --location --request PUT 'https://localhost:8443/api/content/import/nabworldwide/813/movies' \
+--header 'User-Agent: abc' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json-patch+json' \
+--data-raw '{
+  "encryption" : true,
+  "analogProtectionSystem" : "1",
+  "cgmsA" : "1",
+  "audioType" : ["SURROUND"],
+  "resolution" : "1080p",
+  "frameRate" : 50,
+  "codec" : "MPEG4",
+  "bitRate" : 1234,
+  "screenFormat" : "STANDARD",
+  "languages" : [ "string" ],
+  "subtitleLanguages" : [ "string" ],
+  "dubbedLanguages" : [ "string" ],
+  "contentPath" : "tt0080339/tt0080339-movie",
+  "contentFileSize" : 0,
+  "contentCheckSum" : "12345678901234567890123456789012",
+  "assetId" : "813-movie",
+  "providerId" : "nabworldwide",
+  "provider" : "IMDB",
+  "versionMajor" : 0,
+  "versionMinor" : 0,
+  "creationDate" : "2015-07-20T15:49:04-07:00",
+  "lastUpdated" : "2015-07-20T15:49:04-07:00"
+}'
