@@ -3,7 +3,7 @@ using FluentValidationPoc.Controllers.Content.Models;
 
 namespace FluentValidationPoc.Controllers.Content.Validators
 {
-    public class PutMovieAssetRequestModelValidator<T> : PutStreamableRequestModelValidator<PutMovieAssetRequestModel>
+    public class PutMovieAssetRequestModelValidator : PutStreamableRequestModelValidator<PutMovieAssetRequestModel>
     {
         public PutMovieAssetRequestModelValidator()
         {
